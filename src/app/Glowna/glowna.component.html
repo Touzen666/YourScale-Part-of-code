@@ -1,0 +1,162 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card border-success mb-3 mt-3 shadow-lg">
+        <div class="card-header text-success" style="font-weight:bold;">
+          Wprowadz swoje dzisiejsze posiłki
+        </div>
+        <div class="card-body text-success">
+          <div class="text-success mb-2 p-3">
+            Wpisz produkty z których składał się twój posiłek np ziemniaki 150g.
+            Produkty dodane w odpowiednim oknie zostaną automatycznie przypisane
+            do dania. Dania oraz listę produktów z których sie składały możesz
+            znaleźć w zakładce "Twoje konto" a potem edytować w razie potrzeby.
+          </div>
+          <ul>
+            <li>
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="FormControlInput1" placeholder="Śniadanie" />
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <input type="text" class="form-control" id="FormControlInput2" placeholder="II Śniadanie" />
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <input type="text" class="form-control" id="FormControlInput3" placeholder="Lunch" />
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <input type="text" class="form-control" id="FormControlInput4" placeholder="Obiad" />
+              </div>
+            </li>
+
+            <li>
+              <div class="form-group">
+                <input type="text" class="form-control" id="FormControlInput5" placeholder="Przekąska" />
+              </div>
+            </li>
+
+            <li>
+              <div class="form-group">
+                <input type="text" class="form-control" id="FormControlInput6" placeholder="Trening" />
+              </div>
+            </li>
+
+            <li>
+              <div class="form-group">
+                <input type="text" class="form-control" id="FormControlInput7" placeholder="Kolacja" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card border-success mb-3 shadow-lg">
+        <div class="d-flex w-100 justify-content-between">
+          <div class="card-body text-success ">
+            <button type="button" class="btn btn-outline-success" [routerLink]="['/konto']">
+              Zapisz
+            </button>
+            <button type="submit" class="btn btn-outline-success ml-2" [routerLink]="['/cele']">
+              Ustal swój cel
+            </button>
+            <small class="m-2" style="float: right;">Jeśli jeszcze nie ustaliłeś celu jaki chcesz osiągnąć z naszą
+              pomocą zrób to teraz i kliknij przycisk "Ustal swój cel".
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="form-style">
+  <br />
+  <p class="text-center">
+    Wiecej na temat polityki prywatności znajdziesz
+    <a href=""> tutaj</a>
+    <!-- chwilowo link na glowna strone -->
+  </p>
+  <hr />
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-lg">
+        <header class="card-header">
+          <h4 class="card-title mt-2">Jakie posiłki dziś zjadłeś/zjadłaś?</h4>
+        </header>
+        <article class="card-body">
+          <small class="text-muted"
+            >Wpisz produkty z których składał się twój posiłek np ziemniaki
+            150g. Produkty dodane w odpowiednim oknie zostaną automatycznie
+            przypisane do dania. Dania oraz listę produktów z których sie
+            składały możesz znaleźć w zakładce "Twoje konto" a potem edytować w
+            razie potrzeby. pomocą zrób to
+          </small>
+          <form>
+            <input type="text" name="field1" placeholder="Śniadanie" />
+            <input type="text" name="field2" placeholder="II Śniadanie" />
+            <input type="text" name="field3" placeholder="Lunch" />
+            <input type="text" name="field1" placeholder="Obiad" />
+            <input type="text" name="field2" placeholder="Przekąska" />
+            <input type="text" name="field3" placeholder="Lunch" />
+            <input type="text" name="field3" placeholder="Trening" />
+            <input type="text" name="field3" placeholder="Kolacja" />
+            <textarea
+              placeholder="Comentarz"
+              onkeyup="adjust_textarea(this)"
+            ></textarea>
+
+            <!-- form-group end.// -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-success btn-block">
+                Zapisz posiłki
+              </button>
+              <button
+                type="submit"
+                class="btn btn-success btn-block"
+                [routerLink]="['/cele']"
+              >
+                Ustal swoje cele
+              </button>
+            </div>
+            <!-- form-group// -->
+            <small class="text-muted"
+              >Jeszcze nie ustaliłeś celu jaki chcesz osiągnąć z naszą pomocą
+              zrób to <br />teraz i kliknij przycisk "Ustal swój cel".</small
+            >
+          </form>
+        </article>
+        <!-- card-body end .// -->
+        <div class="border-top card-body text-center">
+          Posiadasz już konto? <a [routerLink]="['/zaloguj']">Zaloguj się</a>
+          <br />
+          Nie posiadasz jeszcze konta?
+          <a [routerLink]="['/rejestracja']">Zarejstruj się</a>
+        </div>
+      </div>
+      <!-- card.// -->
+    </div>
+    <!-- col.//-->
+  </div>
+  <!-- row.//-->
+  <hr />
+</div>
+<!--container end.//-->
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <img
+      src="../assets/register.jpg"
+      alt="Card image cap"
+      style="width: 100%;"
+    />
+  </div>
+  <br /><br />
+</div>

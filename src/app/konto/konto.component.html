@@ -1,0 +1,611 @@
+<!-- <div class="container">
+  <div class="row mt-3">
+    <div class="btn-group">
+      <button
+        type="button"
+        class=" btn btn-outline-success "
+        [routerLink]="['/profil']"
+      >
+        Profil
+      </button>
+      <button
+        type="button"
+        class=" btn btn-outline-success "
+        [routerLink]="['/konto']"
+      >
+        Twoje Konto
+      </button>
+      <button
+        type="button"
+        class=" btn btn-outline-success "
+        [routerLink]="['/ustawienia']"
+      >
+        Ustawienia
+      </button>
+    </div>
+  </div>
+  <br />
+</div>
+
+<div class="container">
+  <br />
+  <p class="text-center ">
+    Wiecej na temat polityki prywatności znajdziesz
+    <a [routerLink]="['/politykaPrywatnosci']"> tutaj</a>
+   
+  </p>
+  <hr />
+
+  <div class="row justify-content-center ">
+    <div class="col-md-10">
+      <div class="card shadow-lg">
+        <header class="card-header ">
+          <h4 class="card-title mt-2">Twoje konto</h4>
+        </header>
+        <article class="card-body">
+          <h3 class="card-title mt-2">
+            Tu możesz sprawdzić zapisane przez siebie spożyte posiłki
+          </h3>
+          <a class=" btn btn-outline-success m-1" [routerLink]="['/konto']"
+            >Pokaż posiłki</a
+          >
+          <a class=" btn btn-outline-success m-1" [routerLink]="['/konto']"
+            >Modyfikuj</a
+          >
+          <a class=" btn btn-outline-success m-1" [routerLink]="['']">Dodaj</a>
+          <a class=" btn btn-outline-success m-1" [routerLink]="['/konto']"
+            >Twoje cele</a
+          >
+          <a
+            class=" btn btn-outline-success m-1"
+            [routerLink]="['/listaUzytkownika']"
+            >Twoja lista zakupów</a
+          >
+
+          <div class="accordion " id="accordionExample">
+            <div class="card ">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0 text-center">
+                  <button
+                    class="btn btn-link text-success "
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Śniadanie
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show "
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <li class="list-group-item ">
+                    Jajka 20g
+                  </li>
+                  <li class="list-group-item ">
+                    Chleb 45g
+                  </li>
+                  <li class="list-group-item ">
+                    Szynka 5g
+                  </li>
+                  <li class="list-group-item ">
+                    Masło 2g
+                  </li>
+                  <li class="list-group-item ">
+                    Ogórek 15g
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0 text-center">
+                  <button
+                    class="btn btn-link text-success "
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    II Śniadanie
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseTwo"
+                class="collapse show "
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <li class="list-group-item ">
+                    Pomidor 4g
+                  </li>
+                  <li class="list-group-item ">
+                    Chleb 15g
+                  </li>
+                  <li class="list-group-item ">
+                    Szynka 4g
+                  </li>
+                  <li class="list-group-item ">
+                    Masło 2g
+                  </li>
+                  <li class="list-group-item ">
+                    Ogórek 15g
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-header" id="headingTree">
+                <h2 class="mb-0 text-center">
+                  <button
+                    class="btn btn-link text-success "
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTree"
+                    aria-expanded="false"
+                    aria-controls="collapseTree"
+                  >
+                    Lunch
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseTree"
+                class="collapse show "
+                aria-labelledby="headingTree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <li class="list-group-item ">
+                    Majonez 5g
+                  </li>
+                  <li class="list-group-item ">
+                    Chleb 25g
+                  </li>
+                  <li class="list-group-item ">
+                    Szynka 5g
+                  </li>
+                  <li class="list-group-item ">
+                    Masło 2g
+                  </li>
+                  <li class="list-group-item ">
+                    Ogórek 15g
+                  </li>
+                  <li class="list-group-item ">
+                    Sałata 6g
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0 text-center">
+                  <button
+                    class="btn btn-link text-success "
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Obiad
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseFour"
+                class="collapse show "
+                aria-labelledby="headingFour"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <li class="list-group-item ">
+                    Ziemniaki 100g
+                  </li>
+                  <li class="list-group-item ">
+                    Surówka z marchwi 45g
+                  </li>
+                  <li class="list-group-item ">
+                    Filet z kurczaka 100g
+                  </li>
+                  <li class="list-group-item ">
+                    Masło 2g
+                  </li>
+                  <li class="list-group-item ">
+                    Kompot z jagód 0.330l
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0 text-center">
+                  <button
+                    class="btn btn-link text-success "
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Przekąska
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseFive"
+                class="collapse show "
+                aria-labelledby="headingFive"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <li class="list-group-item ">
+                    Jabłko 1 sz.
+                  </li>
+                  <li class="list-group-item ">
+                    Gruszka 1 sz.
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0 text-center">
+                  <button
+                    class="btn btn-link text-success "
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Trening
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseSix"
+                class="collapse show "
+                aria-labelledby="headingSix"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <li class="list-group-item ">
+                    Kasza jęczmienna 150g
+                  </li>
+                  <li class="list-group-item ">
+                    Filet z indyka 45g
+                  </li>
+                  <li class="list-group-item ">
+                    Mieszanka warzyw chińska 50g
+                  </li>
+                  <li class="list-group-item ">
+                    Mąka 5g
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-header" id="headingSeven">
+                <h2 class="mb-0 text-center">
+                  <button
+                    class="btn btn-link text-success "
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    Kolacja
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseSeven"
+                class="collapse show "
+                aria-labelledby="headingSeven"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <li class="list-group-item ">
+                    Ser żółty 10g
+                  </li>
+                  <li class="list-group-item ">
+                    Chleb 25g
+                  </li>
+                  <li class="list-group-item ">
+                    Szynka 5g
+                  </li>
+                  <li class="list-group-item ">
+                    Masło 2g
+                  </li>
+                  <li class="list-group-item ">
+                    Ogórek 15g
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form>
+    
+            <h6 class="card-title mt-2">
+              Posiadając konto premium możesz modyfikować w dowolnym momencie
+              informacje wprowadzone w ciagu dnia oraz masz dostęp do wielu
+              dodatkowych opcji. Aby dowiedzieć się wiecej kliknij przycisk
+              poniżej.
+            </h6>
+            <div class="form-group">
+              <button
+                type="submit"
+                class="btn btn-success btn-block"
+                [routerLink]="['/subskrybuj']"
+              >
+                Subskrybuj
+              </button>
+            </div>
+            <small class="text-muted"
+              >Klikając przycisk „Subskrybuj”, potwierdzasz, że akceptujesz
+              nasze
+              <br />
+              warunki użytkowania i polityka prywatności.</small
+            >
+          </form>
+        </article>
+     
+        <div class="border-top card-body text-center">
+          Nie posiadasz jeszcze konta premium?
+          <a [routerLink]="['/subskrybuj']">Subskrybuj</a>
+        </div>
+      </div>
+      
+    </div>
+   
+  </div>
+  
+  <hr />
+</div>
+
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <img
+      src="../assets/register.jpg"
+      alt="Card image cap"
+      style="width:100%;"
+    />
+  </div>
+  <br /><br />
+</div> -->
+
+<div class="content-wrap">
+  <div class="container mt-5">
+    <div class="row">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th>
+              <h1>Rodzaj jedzenia</h1>
+            </th>
+            <th>
+              <h1>Kalorie</h1>
+            </th>
+            <th>
+              <h1>Białko</h1>
+            </th>
+            <th>
+              <h1>Tłuszcze</h1>
+            </th>
+            <th>
+              <h1>BMI</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="content-wrap">
+  <div class="container mt-5">
+    <div class="row">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th>
+              <h1>Rodzaj jedzenia</h1>
+            </th>
+            <th>
+              <h1>Kalorie</h1>
+            </th>
+            <th>
+              <h1>Białko</h1>
+            </th>
+            <th>
+              <h1>Tłuszcze</h1>
+            </th>
+            <th>
+              <h1>BMI</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="content-wrap">
+  <div class="container mt-5">
+    <div class="row">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th>
+              <h1>Rodzaj jedzenia</h1>
+            </th>
+            <th>
+              <h1>Kalorie</h1>
+            </th>
+            <th>
+              <h1>Białko</h1>
+            </th>
+            <th>
+              <h1>Tłuszcze</h1>
+            </th>
+            <th>
+              <h1>BMI</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+          <tr>
+            <td>Chleb</td>
+            <td>9518</td>
+            <td>6369</td>
+            <td>6369</td>
+            <td>6369</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

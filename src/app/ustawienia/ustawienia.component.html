@@ -1,0 +1,187 @@
+<div class="container">
+  <div class="row mt-3">
+    <div class="btn-group">
+      <button
+        type="button"
+        class=" btn btn-outline-success "
+        [routerLink]="['/profil']"
+      >
+        Profil
+      </button>
+      <button
+        type="button"
+        class=" btn btn-outline-success "
+        [routerLink]="['/konto']"
+      >
+        Twoje Konto
+      </button>
+      <button
+        type="button"
+        class=" btn btn-outline-success "
+        [routerLink]="['/ustawienia']"
+      >
+        Ustawienia
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <hr />
+
+  <div class="row justify-content-center ">
+    <div class="col-md-6">
+      <div class="card shadow-lg">
+        <header class="card-header ">
+          <a href="" class="float-right btn btn-outline-success mt-1"
+            >Usuń konto</a
+          >
+          <h4 class="card-title mt-2">Ustawienia konta</h4>
+        </header>
+        <article class="card-body">
+          <form>
+            <div class="form-row">
+              <div class="col form-group">
+                <label>Stary login </label>
+                <input type="text" class="form-control" placeholder="" />
+              </div>
+
+              <!-- form-group end.// -->
+              <div class="col form-group">
+                <label>Nowy Login</label>
+                <input type="text" class="form-control" placeholder=" " />
+                <div class="div">
+                  <a href="" class="float-right btn btn-outline-success mt-1"
+                    >Zmień login</a
+                  >
+                </div>
+              </div>
+              <!-- form-group end.// -->
+            </div>
+            <div class="form-row">
+              <div class="col form-group">
+                <label>Stare hasło </label>
+                <input type="password" class="form-control" placeholder="" />
+              </div>
+
+              <!-- form-group end.// -->
+              <div class="col form-group">
+                <label>Nowe hasło</label>
+                <input type="password" class="form-control" placeholder=" " />
+                <div class="div">
+                  <a href="" class="float-right btn btn-outline-success mt-1"
+                    >Zmień hasło</a
+                  >
+                </div>
+              </div>
+              <!-- form-group end.// -->
+            </div>
+
+            <div class="form-group">
+              <label class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  value="option1"
+                />
+                <span class="form-check-label"> Mężczyzna </span>
+              </label>
+              <label class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  value="option2"
+                />
+                <span class="form-check-label"> Kobieta</span>
+              </label>
+            </div>
+            <!-- form-group end.// -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Miasto</label>
+                <input type="text" class="form-control" />
+              </div>
+              <!-- form-group end.// -->
+              <div class="form-group col-md-6">
+                <label>Kraj</label>
+                <select id="inputState" class="form-control">
+                  <option> Choose...</option>
+                  <option>Polska</option>
+                  <option>Uzbekistan</option>
+                  <option>Rosja</option>
+                  <option selected="">Stany zjednoczone</option>
+                  <option>Indie</option>
+                  <option>Afganistan</option>
+                </select>
+              </div>
+              <!-- form-group end.// -->
+            </div>
+            <!-- form-row.// -->
+            <div class="form-group">
+              <label>Stary email</label>
+              <input type="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Nowy email</label>
+              <input type="email" class="form-control" />
+            </div>
+            <form>
+              <!-- form-group// -->
+              <h6 class="card-title mt-2 ">
+                Posiadając konto premium możesz modyfikować w dowolnym momencie
+                informacje wprowadzone w ciagu dnia oraz masz dostęp do wielu
+                dodatkowych opcji. Aby dowiedzieć się wiecej kliknij przycisk
+                poniżej.
+              </h6>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-success btn-block"
+                  [routerLink]="['/subskrybuj']"
+                >
+                  Subskrybuj
+                </button>
+              </div>
+              <small class="text-muted"
+                >Klikając przycisk „Subskrybuj”, potwierdzasz, że akceptujesz
+                nasze
+                <br />
+                warunki użytkowania i polityka prywatności.</small
+              >
+            </form>
+          </form>
+        </article>
+        <!-- card-body end .// -->
+        <div class="border-top card-body text-center">
+          Nie posiadasz jeszcze konta premium?
+          <a [routerLink]="['/subskrybuj']">Subskrybuj</a>
+        </div>
+      </div>
+      <!-- card.// -->
+    </div>
+    <!-- col.//-->
+  </div>
+  <!-- row.//-->
+  <hr />
+  <p class="text-center ">
+    Wiecej na temat polityki prywatności znajdziesz
+    <a [routerLink]="['/politykaPrywatnosci']"> tutaj</a>
+    <!-- chwilowo link na glowna strone -->
+  </p>
+</div>
+<!--container end.//-->
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <img
+      src="../assets/register.jpg"
+      alt="Card image cap"
+      style="width:100%;"
+    />
+  </div>
+  <br /><br />
+</div>

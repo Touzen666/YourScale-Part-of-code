@@ -1,0 +1,6 @@
+{
+  "/v1": {
+    "target": "https://yourscale.henrietta.com.pl/v1",
+    "secure": false
+  }
+}

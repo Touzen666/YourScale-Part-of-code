@@ -1,0 +1,68 @@
+<div class="container">
+    <br />
+    <p class="text-center ">
+        Wiecej na temat polityki prywatności znajdziesz
+        <a href=""> tutaj</a>
+        <!-- chwilowo link na glowna strone -->
+    </p>
+    <hr />
+
+    <div class="row justify-content-center ">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <header class="card-header ">
+
+                    <h4 class="card-title mt-2">Zaloguj się</h4>
+                </header>
+                <article class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <label>Login </label>
+                                <input type="text" class="form-control" placeholder="" />
+                            </div>
+                            <!-- form-group end.// -->
+                            <div class="col form-group">
+                                <label>Hasło</label>
+                                <input type="password" class="form-control" placeholder=" " />
+                            </div>
+                            <!-- form-group end.// -->
+                        </div>
+
+                        <!-- form-group end.// -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block">
+                                Zaloguj się
+                            </button>
+                        </div>
+                        <!-- form-group// -->
+                        <small class="text-muted">Klikając przycisk „Zaloguj się”, potwierdzasz, że akceptujesz
+                            nasze
+                            <br />
+                            warunki użytkowania i polityka prywatności.</small>
+                    </form>
+                </article>
+                <!-- card-body end .// -->
+                <div class="border-top card-body text-center">
+                    <small class="text-muted">Jeśli zapomniałeś hasła możesz je zrestetować
+                        <a [routerLink]="['/rejestracja']">tutaj</a></small><br>
+                    Nie posiadasz jeszcze konta? <a [routerLink]="['/rejestracja']">Zarejstruj się</a>
+                </div>
+            </div>
+            <!-- card.// -->
+        </div>
+        <!-- col.//-->
+    </div>
+    <!-- row.//-->
+    <hr />
+</div>
+<!--container end.//-->
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <img src="../assets/register.jpg" alt="Card image cap" style="width:100%;" />
+    </div>
+    <br /><br />
+</div>

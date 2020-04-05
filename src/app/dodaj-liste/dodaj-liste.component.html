@@ -1,0 +1,95 @@
+<div class="container ">
+  <hr />
+
+  <div class="row justify-content-center ">
+    <div class="col-12">
+      <div class="card shadow-lg">
+        <header class="card-header ">
+          <a
+            class="float-right btn btn-outline-success mt-1"
+            [routerLink]="['/konto']"
+            >Dodaj swoja listę</a
+          >
+          <h4 class="card-title mt-2">Dodaj swoją listę zakupów</h4>
+        </header>
+        <article class="card-body">
+          <form>
+            <div class="input-group">
+              <p>
+                Proszę wprowadzić produkty potrzebne do spożądzenia listy. Po
+                zapisaniu wprowadzonych produktów zostenie utworzona z nich
+                lista którą będzie można przeglądać po zapisaniu zmian oraz w
+                zakładce "Twoje konto".
+              </p>
+              <div class="input-group-prepend">
+                <span class="input-group-text"
+                  >Wprowadz nazwę produktu oraz jego ilość</span
+                >
+              </div>
+              <input type="text" aria-label="First name" class="form-control" />
+              <input type="text" aria-label="Last name" class="form-control" />
+            </div>
+            <form>
+              <!-- form-group// -->
+              <h6 class="card-title mt-4 ">
+                Wprowadz produkty do bazy danych skanując ich kod i zdobądz za
+                nie punkty:
+              </h6>
+              <a class=" btn btn-outline-success m-1" href=""
+                >Zeskanuj kod kreskowy</a
+              >
+              <h6 class="card-title mt-4 ">
+                Posiadając konto premium twoje punkty zdobywane za wprowadzanie
+                kodów kreskowych do bazy danych będą podwajane za każdym razem
+                co ułatwi ci zdobycie konta premium na 30 dni za darmo.
+              </h6>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-success btn-block"
+                  [routerLink]="['/subskrybuj']"
+                >
+                  Subskrybuj
+                </button>
+              </div>
+              <small class="text-muted"
+                >Klikając przycisk „Subskrybuj”, potwierdzasz, że akceptujesz
+                nasze
+                <br />
+                warunki użytkowania i polityka prywatności.</small
+              >
+            </form>
+          </form>
+        </article>
+        <!-- card-body end .// -->
+        <div class="border-top card-body text-center">
+          Nie posiadasz jeszcze konta premium?
+          <a [routerLink]="['/subskrybuj']">Subskrybuj</a>
+        </div>
+      </div>
+      <!-- card.// -->
+    </div>
+    <!-- col.//-->
+  </div>
+  <!-- row.//-->
+  <hr />
+  <p class="text-center ">
+    Wiecej na temat polityki prywatności znajdziesz
+    <a [routerLink]="['/politykaPrywatnosci']"> tutaj</a>
+    <!-- chwilowo link na glowna strone -->
+  </p>
+</div>
+<!--container end.//-->
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <img
+      src="../assets/register.jpg"
+      alt="Card image cap"
+      style="width:100%;"
+    />
+  </div>
+  <br /><br />
+</div>

@@ -1,0 +1,213 @@
+<div class="container">
+  <div class="row">
+    <div class="card text-center border-success  p-0 mb-5 mt-4 shadow-lg">
+      <div class="card-header border-success ">
+        Przepisy
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tutaj możesz dodać swój ulubiony przepis</h5>
+        <p class="card-text">
+          Kliknij przycisk poniżej i podziel się swoim wyśmienitym przepisem z
+          innymi użytkownikami. W trawkcie dodawania przepisów możesz zbierać
+          punkty którę w późniejszym czasie będziesz mógł wymienić na nagrody.
+          Jedną z nich jest darmowe konto premium na 30 dni. Użyj przycisku
+          poniżej i sprawć sam jak to zrobić!
+        </p>
+        <button
+          type="button"
+          class="btn btn-outline-success"
+          [routerLink]="['/dodajPrzepis']"
+        >
+          Dodaj Przepis
+        </button>
+      </div>
+      <div class="card-footer text-muted border-success">
+        Zdobądz konto premium na 30 dni za darmo!
+      </div>
+    </div>
+
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Lp.</th>
+          <th scope="col">Zdjecie</th>
+          <th scope="col">Nick</th>
+          <th scope="col">Przepis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/kluchy.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>Markus</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/burger.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>AJAWoleFIT</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/frytki.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>Bary</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/zupa.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>JemJakChcem</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/sushi.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>Jacob</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/krokiety.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>@Mentos@</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/chleb.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>Leroy</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/jogurt.png"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>Marecki</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../assets/ryba.jpg"
+                alt="Card image cap"
+              />
+            </div>
+          </td>
+          <td>Zosia242</td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            saepe, placeat quibusdam deserunt eligendi, dignissimos beatae
+            laboriosam repellat fugit eveniet ea, adipisci cumque ipsa deleniti
+            libero? Ex accusantium quidem explicabo.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

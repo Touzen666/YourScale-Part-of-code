@@ -1,0 +1,93 @@
+<div class="container">
+  <hr />
+
+  <div class="row justify-content-center ">
+    <div class="col-md-6">
+      <div class="card shadow-lg">
+        <header class="card-header ">
+          <a href="" class="float-right btn btn-outline-success mt-1"
+            >Regulamin</a
+          >
+          <h4 class="card-title mt-2">Ustawienia konta</h4>
+        </header>
+        <article class="card-body">
+          <form>
+            <div class="form-row">
+              <div class="col form-group">
+                <label>Imie </label>
+                <input type="text" class="form-control" placeholder="" />
+              </div>
+
+              <!-- form-group end.// -->
+              <div class="col form-group">
+                <label>Nazwisko</label>
+                <input type="text" class="form-control" placeholder=" " />
+              </div>
+              <!-- form-group end.// -->
+            </div>
+            <label class="ml-3">Data ważności </label>
+            <label class="mr-5 pr-5" style="float: right;"
+              >Data ważności
+            </label>
+            <div class="col">
+              <div class="form-row">
+                <div class="col-3 form-group">
+                  <input type="password" class="form-control" placeholder="" />
+                </div>
+                <div class="col-3 form-group">
+                  <input type="password" class="form-control" placeholder="" />
+                </div>
+
+                <div class="col-3 form-group ml-5">
+                  <input type="password" class="form-control" placeholder="" />
+                </div>
+              </div>
+            </div>
+
+            <form>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-success btn-block"
+                  [routerLink]="['/subskrybuj']"
+                >
+                  Subskrybuj
+                </button>
+              </div>
+              <small class="text-muted"
+                >Klikając przycisk „Subskrybuj”, potwierdzasz, że akceptujesz
+                nasze
+                <br />
+                warunki użytkowania i polityka prywatności.</small
+              >
+            </form>
+          </form>
+        </article>
+        <!-- card-body end .// -->
+      </div>
+      <!-- card.// -->
+    </div>
+    <!-- col.//-->
+  </div>
+  <!-- row.//-->
+  <hr />
+  <p class="text-center ">
+    Wiecej na temat polityki prywatności znajdziesz
+    <a [routerLink]="['/politykaPrywatnosci']"> tutaj</a>
+    <!-- chwilowo link na glowna strone -->
+  </p>
+</div>
+<!--container end.//-->
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <img
+      src="../assets/register.jpg"
+      alt="Card image cap"
+      style="width:100%;"
+    />
+  </div>
+  <br /><br />
+</div>

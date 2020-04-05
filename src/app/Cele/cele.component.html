@@ -1,0 +1,129 @@
+<div class="container">
+  <br />
+  <hr />
+
+  <div class="row justify-content-center ">
+    <div class="col-md-6">
+      <div class="card shadow-lg">
+        <header class="card-header ">
+          <a [routerLink]="['/konto']" class="float-right btn btn-outline-success mt-1">Zapisz</a>
+          <h4 class="card-title mt-2">Ustal swój cel</h4>
+        </header>
+        <article class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-6 col-md-6 shadow-lg mt-1 pb-5 mt-5">
+                <div>
+                  <h6>Ile aktualnie warzysz?</h6>
+                  <div class="range-slider">
+                    <input class="range-slider__range" type="range" value="200" min="0" max="500" />
+                    <span class="range-slider__value">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 shadow-lg mt-1 pb-5 mt-5">
+                <div>
+                  <h6>Jak wysoki/wysoka jesteś?</h6>
+                  <div class="range-slider">
+                    <input class="range-slider__range" type="range" value="250" min="0" max="500" />
+                    <span class="range-slider__value">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 shadow-lg mt-5 pb-4">
+                <div>
+                  <h6 style="padding-bottom: 1.1rem;">Ile masz lat?</h6>
+                  <div class="range-slider">
+                    <input class="range-slider__range" type="range" value="100" min="0" max="500" />
+                    <span class="range-slider__value">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 shadow-lg mt-5 pb-4">
+                <div>
+                  <h6>Jaka wagę pragniesz utrzymywać?</h6>
+                  <div class="range-slider">
+                    <input class="range-slider__range" type="range" value="150" min="0" max="500" />
+                    <span class="range-slider__value">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 shadow-lg mt-5 pb-4 mb-5">
+                <h6>Jaką masz posturę ciała?</h6>
+                <div style="padding-top: 1.1rem;">
+                  <div class="form-group">
+                    <select class="selectpicker form-control">
+                      <option value="0">Powiedz nam jaka masz posturę:</option>
+                      <option value="1">Chudy</option>
+                      <option value="2">Średnio wysportowany</option>
+                      <option value="3">Wysportowany</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 shadow-lg mt-5 pb-4 mb-5">
+                <h6>Jaką posturę ciała chciał byś uzyskać z naszą pomocą?</h6>
+                <div class="">
+                  <div class="form-group">
+                    <select class="selectpicker form-control">
+                      <option value="0">Wybierz posturę:</option>
+                      <option value="1">Chcę schudnąć</option>
+                      <option value="2">Chcę być wysportowany</option>
+                      <option value="3">Chcę być Kulturystą</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </article>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <img src="../assets/register.jpg" alt="Card image cap" style="width:100%;" />
+  </div>
+  <br /><br />
+</div>
+<!-- 
+<div class="slideshow-container">
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../assets/kluchy.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../assets/kluchy.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../assets/kluchy.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+
+  <a class="prev" (click)="ngOnInit(-1)">&#10094;</a>
+  <a class="next" (click)="ngOnInit(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" (click)="ngOnInit(1)"></span>
+  <span class="dot" (click)="ngOnInit(2)"></span>
+  <span class="dot" (click)="ngOnInit(3)"></span>
+</div> -->

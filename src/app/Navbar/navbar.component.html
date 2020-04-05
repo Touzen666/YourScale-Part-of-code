@@ -1,0 +1,217 @@
+<!-- <div class="contener">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" [routerLink]="['']">YourScale</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['']"
+            >Strona główna<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Menu
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/lodowka']">Lodówka</a>
+            <a class="dropdown-item" [routerLink]="['/lista']">Lista Zakupów</a>
+            <a class="dropdown-item" [routerLink]="['/przepisy']">Przepisy</a>
+            <a class="dropdown-item" [routerLink]="['/warzenie']"
+              >Zważ Produkt</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown2"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Użytkownik
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" [routerLink]="['/profil']">Profil</a>
+            <a class="dropdown-item" [routerLink]="['/konto']">Twoje Konto</a>
+            <a class="dropdown-item" [routerLink]="['/ustawienia']"
+              >Ustawienia</a
+            >
+            <a class="dropdown-item" [routerLink]="['/subskrybuj']"
+              >Subskrybcja</a
+            >
+          </div>
+        </li>
+      </ul>
+
+
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          class="form-control mr-sm-2"
+          type="text"
+          placeholder="Login"
+          aria-label="Search"
+          minlength="3"
+        />
+        <input
+          class="form-control mr-sm-2"
+          type="password"
+          placeholder="Hasło"
+          aria-label="Search"
+          minlength="3"
+        />
+        <a
+          class="float-right btn btn-outline-success mr-2"
+          [routerLink]="['/konto']"
+          >Zaloguj</a
+        >
+      </form>
+    </div>
+  </nav>
+</div> -->
+
+<div class="header">
+  <div class="force-overflow">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navigation"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navigation" class="collapse navbar-collapse flex-column">
+        <div class="profile-section pt-3 pt-lg-0"></div>
+        <!--//profile-section-->
+
+        <ul class="navbar-nav flex-column text-left">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/zaloguj']">
+              <i class="fas fa-sign-in-alt"></i>Zaloguj</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/register']">
+              <i class="far fa-registered"></i>Zarejstruj</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/warzenie']">
+              <i class="fas fa-balance-scale"></i>Zważ produkt</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="far fa-address-card"></i>DashBoard
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['./']">Twoje Konto</a>
+              <a class="dropdown-item" [routerLink]="['/profil']">Profil</a>
+              <a class="dropdown-item" [routerLink]="['/subskrybuj']"
+                >Subskrybcja</a
+              >
+              <a class="dropdown-item" [routerLink]="['/ustawienia']"
+                >Ustawienia</a
+              >
+            </div>
+          </li>
+          <!-- <li>
+            <div ngbDropdown class="d-inline-block">
+              <button
+                class="btn btn-outline"
+                id="dropdownBasic1"
+                ngbDropdownToggle
+              >
+                Toggle dropdown
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Action - 1</button>
+                <button ngbDropdownItem>Another Action</button>
+                <button ngbDropdownItem>Something else is here</button>
+              </div>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/lodowka']">
+              <i class="fas fa-archive"></i>Lodówka</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/lista']">
+              <i class="fas fa-stream"></i>Lista Zakupów</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/przepisy']">
+              <i class="fas fa-utensils"></i>Przepisy</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['']">
+              <i class="fas fa-sign-out-alt"></i>Wyloguj</a
+            >
+          </li>
+
+          <li class="nav-item ml-2 mt-3">
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col footer-social text-center">
+                    <a href="#"><i class="fab fa-facebook-f mr-3"></i></a>
+                    <a href="#"><i class="fab fa-twitter mr-3"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g mr-3"></i></a>
+                    <a href="#"><i class="fab fa-instagram mr-3"></i></a>
+                    <a href="#"><i class="fab fa-pinterest mr-3"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!--//dark-mode-toggle-->
+      </div>
+    </nav>
+  </div>
+  <!--//force-overflow-->
+</div>

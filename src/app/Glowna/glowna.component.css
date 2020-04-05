@@ -1,0 +1,36 @@
+/* No CSS */ /*# sourceMappingURL=glowna.component.css.map */
+
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style input[type="password"],
+.form-style textarea,
+.form-style select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
+  color: white;
+}
+.form-style-8 textarea {
+  resize: none;
+  overflow: hidden;
+}
+@media screen and (max-width: 400px) {
+  .form-style {
+  }
+}

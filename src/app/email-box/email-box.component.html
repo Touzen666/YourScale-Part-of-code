@@ -1,0 +1,73 @@
+<div class="container ">
+  <hr />
+
+  <div class="row justify-content-center ">
+    <div class="col-12">
+      <div class="card shadow-lg">
+        <header class="card-header ">
+          <h4 class="card-title mt-2">
+            Jeśli masz jakieś pytania napisz do nas
+          </h4>
+        </header>
+        <article class="card-body">
+          <form>
+            <div class="form-group">
+              <div class="col form-group">
+                <label>Wprowadz swoją godność: </label>
+                <input type="text" class="form-control" placeholder="" />
+              </div>
+
+              <!-- form-group end.// -->
+              <div class="col form-group">
+                <label>Wprowadz swój email:</label>
+                <input type="text" class="form-control" placeholder=" " />
+              </div>
+              <label for="comment"> <h6>Wiadomość:</h6></label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+
+            <form>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-success btn-block"
+                  [routerLink]="['']"
+                >
+                  Wyślij
+                </button>
+              </div>
+              <small class="text-muted"
+                >Klikając przycisk „Wyślij”, potwierdzasz, że akceptujesz nasze
+                <br />
+                warunki użytkowania i polityke prywatności.</small
+              >
+            </form>
+          </form>
+        </article>
+      </div>
+      <!-- card.// -->
+    </div>
+    <!-- col.//-->
+  </div>
+  <!-- row.//-->
+  <hr />
+  <p class="text-center ">
+    Wiecej na temat polityki prywatności znajdziesz
+    <a [routerLink]="['/politykaPrywatnosci']"> tutaj</a>
+    <!-- chwilowo link na glowna strone -->
+  </p>
+</div>
+<!--container end.//-->
+
+<br />
+
+<div class="container">
+  <div class="row">
+    <img
+      src="../assets/register.jpg"
+      alt="Card image cap"
+      style="width:100%;"
+    />
+  </div>
+  <br /><br />
+</div>
