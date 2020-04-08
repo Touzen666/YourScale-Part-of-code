@@ -7,26 +7,21 @@ import { User } from "../_models";
 export class UserService {
   constructor(private http: HttpClient) {}
 
-  // getAll() {
-  //   return this.http.get<User[]>(
-  //     `https://yourscale.henrietta.com.pl/v1/accounts`
-  //   );
-  // }
-
-  // register(user: User) {
-  //   return this.http.post(
-  //     `https://yourscale.henrietta.com.pl/v1/account/register`,
-  //     user
-  //   );
-  // }
-
   getAll() {
-    return this.http.get<User[]>(`/users`);
+    return this.http.get<User[]>(`/v1/login`);
   }
 
   register(user: User) {
-    return this.http.post(`/users/register`, user);
+    return this.http.post(`/v1/account/register`, user);
   }
+
+  // getAll() {
+  //   return this.http.get<User[]>(`/users`);
+  // }
+
+  // register(user: User) {
+  //   return this.http.post(`/users/register`, user);
+  // }
 
   delete(id: number) {
     return this.http.delete(`/users/${id}`);

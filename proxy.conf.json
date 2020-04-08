@@ -1,6 +1,6 @@
 {
   "/v1": {
-    "target": "https://yourscale.henrietta.com.pl/v1",
+    "target": "http://koxus.pythonanywhere.com/v1",
     "secure": false
   }
 }

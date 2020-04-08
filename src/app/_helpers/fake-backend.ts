@@ -30,12 +30,12 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
     function handleRoute() {
       switch (true) {
-        case url.endsWith("/users/authenticate") && method === "POST":
-          return authenticate();
-        case url.endsWith("/users/register") && method === "POST":
-          return register();
-        case url.endsWith("/users") && method === "GET":
-          return getUsers();
+        // case url.endsWith("/users/authenticate") && method === "POST":
+        //   return authenticate();
+        // case url.endsWith("/users/register") && method === "POST":
+        //   return register();
+        // case url.endsWith("/users") && method === "GET":
+        //   return getUsers();
 
         case url.endsWith("/v1/login") && method === "POST":
           return authenticate();
@@ -55,16 +55,21 @@ export class FakeBackendInterceptor implements HttpInterceptor {
     // route functions
 
     function authenticate() {
-      const { username, password } = body;
+      const { email, password } = body;
       const user = users.find(
-        (x) => x.username === username && x.password === password
+        (x) => x.email === email && x.password === password
       );
-      if (!user) return error("Username or password is incorrect");
+      if (!user) return error("Email or password is incorrect");
       return ok({
         id: user.id,
-        username: user.username,
-        firstName: user.firstName,
-        lastName: user.lastName,
+        email: user.email,
+        name: user.name,
+        surname: user.surname,
+        sex: user.sex,
+        city: user.city,
+        country: user.country,
+        password: user.password,
+        date_of_birth: user.date_of_birth,
         token: "fake-jwt-token",
       });
     }
