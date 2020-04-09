@@ -45,14 +45,14 @@
       padding-left: 5px;
       padding-right: 5px;
       margin-left: 0;
-      height: 100%; 
-      width: 100%; 
-      position: fixed; 
-      z-index: 1; 
-      top: 200px; 
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 200px;
       left: 0;
-      background-color: #111; 
-      overflow-x: hidden; 
+      background-color: #111;
+      overflow-x: hidden;
       padding-top: 20px;
       justify-content: center; */
   }
@@ -60,4 +60,7 @@
 i {
   margin-right: 10px;
   font-size: 18px;
+}
+.logout {
+  cursor: pointer;
 }
