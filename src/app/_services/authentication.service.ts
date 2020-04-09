@@ -21,10 +21,10 @@ export class AuthenticationService {
     return this.currentUserSubject.value;
   }
 
-  login(username: string, password: string) {
+  login(email: string, password: string) {
     return this.http
       .post<any>(`/v1/login`, {
-        username,
+        email,
         password,
       })
       .pipe(

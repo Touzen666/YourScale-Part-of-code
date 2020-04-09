@@ -12,7 +12,7 @@ export class UserService {
   }
 
   register(user: User) {
-    return this.http.post(`/v1/account/register`, user);
+    return this.http.put(`/v1/accounts/register`, user);
   }
 
   // getAll() {

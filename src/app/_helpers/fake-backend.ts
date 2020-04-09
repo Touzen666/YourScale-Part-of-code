@@ -29,6 +29,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       .pipe(dematerialize());
 
     function handleRoute() {
+      console.log("handling", url);
       switch (true) {
         // case url.endsWith("/users/authenticate") && method === "POST":
         //   return authenticate();
@@ -37,17 +38,18 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         // case url.endsWith("/users") && method === "GET":
         //   return getUsers();
 
-        case url.endsWith("/v1/login") && method === "POST":
+        case url.endsWith("v1/login") && method === "POST":
           return authenticate();
-        case url.endsWith("/v1/account/register") && method === "PUT":
+        case url.endsWith("/v1/accounts/register") && method === "PUT":
           return register();
-        case url.endsWith("/v1/accounts") && method === "GET":
+        case url.endsWith("v1/accounts") && method === "GET":
           return getUsers();
 
         case url.match(/\/users\/\d+$/) && method === "DELETE":
           return deleteUser();
         default:
           // pass through any requests not handled above
+          console.log("unhandle", url);
           return next.handle(request);
       }
     }

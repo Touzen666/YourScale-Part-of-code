@@ -132,44 +132,29 @@
               <i class="fas fa-balance-scale"></i>Zważ produkt</a
             >
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+
+          <li ngbDropdown class="d-inline-block nav-item">
+            <button
+              class="btn btn-outline nav-link"
+              id="dropdownBasic1"
+              ngbDropdownToggle
             >
               <i class="far fa-address-card"></i>DashBoard
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" [routerLink]="['./']">Twoje Konto</a>
-              <a class="dropdown-item" [routerLink]="['/profil']">Profil</a>
-              <a class="dropdown-item" [routerLink]="['/subskrybuj']"
-                >Subskrybcja</a
-              >
-              <a class="dropdown-item" [routerLink]="['/ustawienia']"
-                >Ustawienia</a
-              >
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem [routerLink]="['./konto']">
+                Twoje Konto
+              </button>
+              <button ngbDropdownItem [routerLink]="['/profil']">Profil</button>
+              <button ngbDropdownItem [routerLink]="['/subskrybuj']">
+                Subskrybcja
+              </button>
+              <button ngbDropdownItem [routerLink]="['/ustawienia']">
+                Ustawienia
+              </button>
             </div>
           </li>
-          <!-- <li>
-            <div ngbDropdown class="d-inline-block">
-              <button
-                class="btn btn-outline"
-                id="dropdownBasic1"
-                ngbDropdownToggle
-              >
-                Toggle dropdown
-              </button>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button ngbDropdownItem>Action - 1</button>
-                <button ngbDropdownItem>Another Action</button>
-                <button ngbDropdownItem>Something else is here</button>
-              </div>
-            </div>
-          </li> -->
+
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/lodowka']">
               <i class="fas fa-archive"></i>Lodówka</a

@@ -7,7 +7,7 @@ import { User } from "./_models";
 @Component({
   selector: "app",
   templateUrl: "app.component.html",
-  styleUrls: ["./app.component.scss", "./app.component.css"]
+  styleUrls: ["./app.component.scss", "./app.component.css"],
 })
 export class AppComponent {
   currentUser: User;
@@ -17,7 +17,7 @@ export class AppComponent {
     private authenticationService: AuthenticationService
   ) {
     this.authenticationService.currentUser.subscribe(
-      x => (this.currentUser = x)
+      (x) => (this.currentUser = x)
     );
   }
 
